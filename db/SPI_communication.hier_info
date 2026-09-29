@@ -1,39 +1,30 @@
-|SPI_one_fpga_top_level
+|SPI_top_level
 CLOCK_50 => SPI_master:master_ins0.clk
-done_flag << SPI_master:master_ins0.done[0]
+GPIO_14_MOSI_IN => SPI_slave:slave_ins0.mosi
+GPIO_0_MOSI_OUT <= SPI_master:master_ins0.mosi
+GPIO_18_MISO_IN => SPI_master:master_ins0.miso
+GPIO_4_MISO_OUT <= SPI_slave:slave_ins0.miso
+GPIO_20_SCLK_IN => SPI_slave:slave_ins0.sclk
+GPIO_9_SCLK_OUT <= SPI_master:master_ins0.sclk_out[0]
+GPIO_24_CS_IN => SPI_slave:slave_ins0.cs_n
+GPIO_7_CS_OUT <= SPI_master:master_ins0.cs_n
 SW[0] => always0.IN0
 SW[0] => always0.IN0
 SW[1] => always0.IN1
 SW[1] => always0.IN1
-SW[2] => ~NO_FANOUT~
-SW[3] => ~NO_FANOUT~
-SW[4] => ~NO_FANOUT~
-SW[5] => LEDR.DATAA
-SW[5] => LEDR.DATAA
-SW[5] => LEDR.DATAA
-SW[5] => LEDR.DATAA
-SW[5] => LEDR.DATAA
-SW[5] => LEDR.DATAA
-SW[5] => LEDR.DATAA
-SW[5] => LEDR.DATAA
-SW[5] => LEDR.DATAA
-SW[6] => ~NO_FANOUT~
-SW[7] => ~NO_FANOUT~
-SW[8] => ~NO_FANOUT~
-SW[9] => SPI_master:master_ins0.start_sig
-LEDR[0] << LEDR.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[1] << LEDR.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[2] << LEDR.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[3] << LEDR.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[4] << LEDR.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[5] << LEDR.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[6] << LEDR.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[7] << LEDR.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[8] << LEDR.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[9] << LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[0] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[9] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SPI_one_fpga_top_level|SPI_master:master_ins0
+|SPI_top_level|SPI_master:master_ins0
 start_sig => cs_n.OUTPUTSELECT
 start_sig => state.OUTPUTSELECT
 start_sig => state.OUTPUTSELECT
@@ -94,7 +85,7 @@ done[0] <= done[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 sclk_out[0] <= sclk:sclk_5MHZ.ser_clk
 
 
-|SPI_one_fpga_top_level|SPI_master:master_ins0|sclk:sclk_5MHZ
+|SPI_top_level|SPI_master:master_ins0|sclk:sclk_5MHZ
 clk[0] => ser_clk[0]~reg0.CLK
 clk[0] => count[0].CLK
 clk[0] => count[1].CLK
@@ -104,7 +95,7 @@ sclk_rise[0] <= sclk_rise.DB_MAX_OUTPUT_PORT_TYPE
 sclk_fall[0] <= sclk_fall.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SPI_one_fpga_top_level|SPI_slave:slave_ins0
+|SPI_top_level|SPI_slave:slave_ins0
 cs_n => tx_shift[0].ALOAD
 cs_n => tx_shift[1].ALOAD
 cs_n => tx_shift[2].ALOAD

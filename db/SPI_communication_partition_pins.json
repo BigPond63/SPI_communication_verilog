@@ -4,6 +4,14 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "GPIO_4_MISO_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_9_SCLK_OUT",
+					"strict" : false
+				},
+				{
 					"name" : "LEDR[0]",
 					"strict" : false
 				},
@@ -44,15 +52,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[0]",
-					"strict" : false
-				},
-				{
 					"name" : "SW[1]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[5]",
+					"name" : "SW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_20_SCLK_IN",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_24_CS_IN",
 					"strict" : false
 				},
 				{
@@ -60,7 +72,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[9]",
+					"name" : "GPIO_14_MOSI_IN",
 					"strict" : false
 				}
 			]

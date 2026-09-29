@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Sep 29 16:15:16 2026
+Analysis & Synthesis Status : Successful - Tue Sep 29 17:42:07 2026
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : SPI_communication
-Top-level Entity Name : SPI_one_fpga_top_level
+Top-level Entity Name : SPI_top_level
 Family : MAX 10
-Total logic elements : 125
-    Total combinational functions : 72
-    Dedicated logic registers : 92
-Total registers : 92
-Total pins : 22
+Total logic elements : 58
+    Total combinational functions : 27
+    Dedicated logic registers : 45
+Total registers : 45
+Total pins : 21
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

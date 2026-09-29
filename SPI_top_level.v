@@ -1,23 +1,29 @@
 module SPI_top_level(
-	input GPIO_MOSI_IN,
-	output GPIO_MOSI_OUT,
-	input GPIO_MISO_IN,
-	output GPIO_MISO_OUT,
 	input CLOCK_50,
-	output done_flag,
+	
+	input GPIO_14_MOSI_IN,
+	output GPIO_0_MOSI_OUT,
+	
+	input GPIO_18_MISO_IN,
+	output GPIO_4_MISO_OUT,
+	
+	input GPIO_20_SCLK_IN,
+	output GPIO_9_SCLK_OUT,
+	
+	input GPIO_24_CS_IN,
+	output GPIO_7_CS_OUT,
+
 	input [1:0] SW,
 	output reg [9:0] LEDR = 10'b0
 );
 
+	
 	reg [0:0] start = 1'b0;
 	wire [15:0] master_rx;
 	wire [15:0] slave_rx;
-	wire cs_n_wire;
 	
 	reg [15:0] master_tx = 16'd67;
 	reg [15:0] slave_tx = 16'd69;
-	
-	wire sclk;
 	
 	always @(*) begin
 		// display what master has received
@@ -35,22 +41,22 @@ module SPI_top_level(
 	SPI_master master_ins0 (
 		.start_sig(start),
 		.clk(CLOCK_50),
-		.miso(GPIO_MISO_IN),
-		.mosi(GPIO_MOSI_OUT),
-		.cs_n(cs_n_wire),
+		.miso(GPIO_18_MISO_IN),
+		.mosi(GPIO_0_MOSI_OUT),
+		.cs_n(GPIO_7_CS_OUT),
 		.rx(master_rx),
 		.tx(master_tx),
 		.done(done_flag),
-		.sclk_reg(sclk)
+		.sclk_out(GPIO_9_SCLK_OUT)
 	);
 	
 	SPI_slave slave_ins0 (
-		.cs_n(cs_n_wire),
+		.cs_n(GPIO_24_CS_IN),
 		.rx_slave(slave_rx),
 		.tx_slave(slave_tx),
-		.sclk(sclk),
-		.mosi(GPIO_MOSI_IN),
-		.miso(GPIO_MISO_OUT)
+		.sclk(GPIO_20_SCLK_IN),
+		.mosi(GPIO_14_MOSI_IN),
+		.miso(GPIO_4_MISO_OUT)
 	);
 
 

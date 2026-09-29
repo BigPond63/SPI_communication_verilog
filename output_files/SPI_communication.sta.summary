@@ -2,100 +2,76 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -3.861
-TNS   : -140.220
+Type  : Slow 1200mV 85C Model Setup 'GPIO_20_SCLK_IN'
+Slack : -1.853
+TNS   : -49.887
 
-Type  : Slow 1200mV 85C Model Setup 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
-Slack : -2.320
-TNS   : -62.330
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -0.200
+TNS   : -0.584
 
 Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : 0.348
+Slack : 0.340
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
-Slack : 0.363
+Type  : Slow 1200mV 85C Model Hold 'GPIO_20_SCLK_IN'
+Slack : 0.393
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
-Slack : -0.814
-TNS   : -16.394
-
-Type  : Slow 1200mV 85C Model Removal 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
-Slack : 1.037
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'GPIO_20_SCLK_IN'
+Slack : -3.000
+TNS   : -60.523
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -74.553
+TNS   : -8.612
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
-Slack : -1.403
-TNS   : -57.523
+Type  : Slow 1200mV 0C Model Setup 'GPIO_20_SCLK_IN'
+Slack : -1.746
+TNS   : -46.135
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -3.553
-TNS   : -125.584
-
-Type  : Slow 1200mV 0C Model Setup 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
-Slack : -2.149
-TNS   : -56.622
+Slack : -0.098
+TNS   : -0.274
 
 Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.312
+Slack : 0.305
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
-Slack : 0.327
+Type  : Slow 1200mV 0C Model Hold 'GPIO_20_SCLK_IN'
+Slack : 0.355
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
-Slack : -0.751
-TNS   : -14.631
-
-Type  : Slow 1200mV 0C Model Removal 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
-Slack : 0.974
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'GPIO_20_SCLK_IN'
+Slack : -3.000
+TNS   : -60.523
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -74.553
+TNS   : -8.612
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
-Slack : -1.403
-TNS   : -57.523
+Type  : Fast 1200mV 0C Model Setup 'GPIO_20_SCLK_IN'
+Slack : -0.022
+TNS   : -0.132
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -1.283
-TNS   : -37.537
-
-Type  : Fast 1200mV 0C Model Setup 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
-Slack : -0.561
-TNS   : -12.354
+Slack : 0.487
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.152
+Slack : 0.147
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
-Slack : 0.156
+Type  : Fast 1200mV 0C Model Hold 'GPIO_20_SCLK_IN'
+Slack : 0.170
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Recovery 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
-Slack : 0.033
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
-Slack : 0.366
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'GPIO_20_SCLK_IN'
+Slack : -3.000
+TNS   : -54.763
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -62.664
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
-Slack : -1.000
-TNS   : -41.000
+TNS   : -7.668
 
 ------------------------------------------------------------
