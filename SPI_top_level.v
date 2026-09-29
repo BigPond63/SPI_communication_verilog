@@ -22,8 +22,14 @@ module SPI_top_level(
 	wire [15:0] master_rx;
 	wire [15:0] slave_rx;
 	
+	/*
 	reg [15:0] master_tx = 16'd67;
 	reg [15:0] slave_tx = 16'd69;
+	*/
+	
+	reg [15:0] master_tx = 16'd32100;
+	reg [15:0] slave_tx = 16'd43200;
+	
 	
 	always @(*) begin
 		// display what master has received

@@ -1,15 +1,15 @@
 module SPI_one_fpga_top_level(
-	input GPIO_MOSI_IN,
-	output GPIO_MOSI_OUT,
-	input GPIO_MISO_IN,
-	output GPIO_MISO_OUT,
 	input CLOCK_50,
 	output done_flag,
-	input [1:0] SW,
+	input [9:0] SW,
 	output reg [9:0] LEDR = 10'b0
 );
-
-	reg [0:0] start = 1'b0;
+	
+	
+	wire mosi;
+	wire miso;
+	
+	wire [0:0] start;
 	wire [15:0] master_rx;
 	wire [15:0] slave_rx;
 	wire cs_n_wire;
@@ -18,6 +18,8 @@ module SPI_one_fpga_top_level(
 	reg [15:0] slave_tx = 16'd69;
 	
 	wire sclk;
+	
+	assign start = SW[9];
 	
 	always @(*) begin
 		// display what master has received
@@ -28,20 +30,23 @@ module SPI_one_fpga_top_level(
 		end else if (SW[1] && ~SW[0]) begin
 			LEDR[9:0] = slave_rx[9:0];
 			
+		end else if (SW[5]) begin
+			LEDR[9:0] = 16'd64;
 		end else LEDR[9:0] = {10{1'b1}};
 		
 	end
 	
+	// fragile with done_flag atm -> output logic feeds into input logic -> just test
 	SPI_master master_ins0 (
 		.start_sig(start),
 		.clk(CLOCK_50),
-		.miso(GPIO_MISO_IN),
-		.mosi(GPIO_MOSI_OUT),
+		.miso(miso),
+		.mosi(mosi),
 		.cs_n(cs_n_wire),
 		.rx(master_rx),
 		.tx(master_tx),
 		.done(done_flag),
-		.sclk_reg(sclk)
+		.sclk_out(sclk)
 	);
 	
 	SPI_slave slave_ins0 (
@@ -49,8 +54,8 @@ module SPI_one_fpga_top_level(
 		.rx_slave(slave_rx),
 		.tx_slave(slave_tx),
 		.sclk(sclk),
-		.mosi(GPIO_MOSI_IN),
-		.miso(GPIO_MISO_OUT)
+		.mosi(mosi),
+		.miso(miso)
 	);
 
 

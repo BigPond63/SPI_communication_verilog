@@ -14,9 +14,12 @@ module SPI_one_fpga_top_level(
 	wire [15:0] slave_rx;
 	wire cs_n_wire;
 	
+	/*
 	reg [15:0] master_tx = 16'd67;
 	reg [15:0] slave_tx = 16'd69;
-	
+	*/
+	reg [15:0] master_tx = 16'd43210;
+	reg [15:0] slave_tx = 16'd32100;
 	wire sclk;
 	
 	assign start = SW[9];

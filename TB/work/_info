@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/intelFPGA_lite/18.1
 vsclk
-Z0 !s110 1790662238
+Z0 !s110 1790669560
 !i10b 1
 !s100 Db@C:eO4AdI^PUf7e5dCF3
 I555PJAD?mlYDGHh>b_d1C3
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1790662238.000000
+Z4 !s108 1790669560.000000
 !s107 C:/Users/ziggy/Documents/ECE2072/SPI_communication/sclk.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ziggy/Documents/ECE2072/SPI_communication/sclk.v|
 !i113 1
@@ -76,11 +76,11 @@ n@s@p@i_master_tb
 vSPI_one_fpga_top_level
 R0
 !i10b 1
-!s100 GLiYF5`VA?NDRQVz1?>`=3
-IGg8gXzcSIe2E@:nSUh;8T2
+!s100 o><YL5cWe8VRhT4=Dl@G71
+In_]T2BR<AQNS<3n6giaWZ2
 R1
 R2
-w1790662213
+w1790669553
 8C:/Users/ziggy/Documents/ECE2072/SPI_communication/SPI_one_fpga_top_level.v
 FC:/Users/ziggy/Documents/ECE2072/SPI_communication/SPI_one_fpga_top_level.v
 L0 1
@@ -120,14 +120,14 @@ n@s@p@i_slave
 vSPI_tb
 R0
 !i10b 1
-!s100 `a8>X:B7@BWolA:=2H4JC0
-IJcJm?Kne;`_@Nn6YmL>6?3
+!s100 YONIIWk;W?_DiS>RYgQBk2
+IVRC<BE7ga]Z_oL<40Y;`z1
 R1
 R2
-w1790661742
+w1790669230
 8C:/Users/ziggy/Documents/ECE2072/SPI_communication/SPI_tb.v
 FC:/Users/ziggy/Documents/ECE2072/SPI_communication/SPI_tb.v
-L0 1
+L0 3
 R3
 r1
 !s85 0
