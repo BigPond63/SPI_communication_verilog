@@ -3,7 +3,6 @@ module SPI_slave (
 	output reg [15:0] rx_slave = 16'd0,
 	input [15:0] tx_slave, // to be transmitted to master
 	input sclk,
-	input done_check,
 	input mosi,
 	output miso
 );
@@ -38,6 +37,7 @@ module SPI_slave (
 	
 	always @(negedge sclk, posedge cs_n) begin
 		
+		// cs_n = 1, transmission informaion is placed onto tx_shift
 		if (cs_n) begin
 			tx_shift <= tx_slave;
 		end else if (bit_count == 5'd16) begin

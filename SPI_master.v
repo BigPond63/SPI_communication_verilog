@@ -1,20 +1,23 @@
 module SPI_master (
-	input start_sig,
-	input clk,
+	input start_sig, // externally from processor
+	input clk, // synced with clock_50
 	
 	input miso,
 	output mosi,
 	output reg cs_n = 1'b1,
-	output reg [15:0] rx = 16'b0, // data to be loaded and received
-	input [15:0] tx, // to be sent to slave
+	output reg [15:0] rx = 16'b0, // data to be received from slave
+	input [15:0] tx, // data to be sent to slave
 	output reg [0:0] done = 1'b0,
 	output reg [0:0] sclk_reg = 1'b0;
 );
 
 	reg [2:0] state = 3'b001;
 	reg [15:0] tx_shift = 16'b0;
+	reg [15:0] rx_shift = 16'b0;
 	reg [4:0] bit_count = 5'd0;
-	reg [15:0] rx_shift;
+	
+	
+	
 // states -> IDLE, TRANSMISSION, FINISH
 
 	wire sclk_rise;
@@ -30,7 +33,7 @@ module SPI_master (
 	);
 	
 	// transmit bit to slave
-	assign mosi = tx_reg_shift[15];
+	assign mosi = tx_shift[15];
 	
 	reg misoOne = 1'b0;
 	reg misoTwo = 1'b0;
@@ -101,6 +104,7 @@ module SPI_master (
 			end
 		
 			default: state <= 3'b001;
+			
 		endcase
 	
 	end
