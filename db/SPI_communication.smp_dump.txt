@@ -1,0 +1,6 @@
+
+State Machine - |SPI_one_fpga_top_level|SPI_master:master_ins0|state
+Name state.100 state.010 state.001 
+state.001 0 0 0 
+state.010 0 1 1 
+state.100 1 0 1 

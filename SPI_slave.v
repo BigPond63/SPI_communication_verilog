@@ -20,8 +20,6 @@ module SPI_slave (
 		if (cs_n) begin
 			// reset bit count
 			bit_count <= 5'd0;
-			rx_shift <= 16'd0;
-			tx_shift <= 16'd0;
 		
 		end else begin
 		

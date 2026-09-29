@@ -1,8 +1,8 @@
 module SPI_top_level(
-	input GPIO_mosi_in,
-	output GPIO_mosi_out,
-	input GPIO_miso_in,
-	output GPIO_miso_out,
+	input GPIO_MOSI_IN,
+	output GPIO_MOSI_OUT,
+	input GPIO_MISO_IN,
+	output GPIO_MISO_OUT,
 	input CLOCK_50,
 	output done_flag,
 	input [1:0] SW,
@@ -35,8 +35,8 @@ module SPI_top_level(
 	SPI_master master_ins0 (
 		.start_sig(start),
 		.clk(CLOCK_50),
-		.miso(GPIO_miso_in),
-		.mosi(GPIO_mosi_out),
+		.miso(GPIO_MISO_IN),
+		.mosi(GPIO_MOSI_OUT),
 		.cs_n(cs_n_wire),
 		.rx(master_rx),
 		.tx(master_tx),
@@ -49,8 +49,8 @@ module SPI_top_level(
 		.rx_slave(slave_rx),
 		.tx_slave(slave_tx),
 		.sclk(sclk),
-		.mosi(GPIO_mosi_in),
-		.miso(GPIO_miso_out)
+		.mosi(GPIO_MOSI_IN),
+		.miso(GPIO_MISO_OUT)
 	);
 
 

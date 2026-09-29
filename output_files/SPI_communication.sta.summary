@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -3.861
+TNS   : -140.220
+
+Type  : Slow 1200mV 85C Model Setup 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
+Slack : -2.320
+TNS   : -62.330
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
+Slack : 0.363
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
+Slack : -0.814
+TNS   : -16.394
+
+Type  : Slow 1200mV 85C Model Removal 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
+Slack : 1.037
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -74.553
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
+Slack : -1.403
+TNS   : -57.523
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -3.553
+TNS   : -125.584
+
+Type  : Slow 1200mV 0C Model Setup 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
+Slack : -2.149
+TNS   : -56.622
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
+Slack : 0.327
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
+Slack : -0.751
+TNS   : -14.631
+
+Type  : Slow 1200mV 0C Model Removal 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
+Slack : 0.974
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -74.553
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
+Slack : -1.403
+TNS   : -57.523
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -1.283
+TNS   : -37.537
+
+Type  : Fast 1200mV 0C Model Setup 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
+Slack : -0.561
+TNS   : -12.354
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
+Slack : 0.156
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
+Slack : 0.033
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
+Slack : 0.366
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -62.664
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SPI_master:master_ins0|sclk:sclk_5MHZ|ser_clk[0]'
+Slack : -1.000
+TNS   : -41.000
+
+------------------------------------------------------------

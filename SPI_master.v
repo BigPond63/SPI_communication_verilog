@@ -8,7 +8,7 @@ module SPI_master (
 	output reg [15:0] rx = 16'b0, // data to be received from slave
 	input [15:0] tx, // data to be sent to slave
 	output reg [0:0] done = 1'b0,
-	output reg [0:0] sclk_reg = 1'b0;
+	output [0:0] sclk_out
 );
 
 	reg [2:0] state = 3'b001;
@@ -23,13 +23,12 @@ module SPI_master (
 	wire sclk_rise;
 	wire sclk_fall;
 	wire sclk;
-	assign sclk_reg = sclk;
 
 	sclk sclk_5MHZ (
 		.clk(clk),
 		.sclk_rise(sclk_rise),
 		.sclk_fall(sclk_fall),
-		.ser_clk(sclk)
+		.ser_clk(sclk_out)
 	);
 	
 	// transmit bit to slave
@@ -108,3 +107,5 @@ module SPI_master (
 		endcase
 	
 	end
+
+endmodule

@@ -1,0 +1,43 @@
+C:/Users/ziggy/Documents/ECE2072/SPI_communication/SPI_slave.v {1 {vlog -work work -stats=none C:/Users/ziggy/Documents/ECE2072/SPI_communication/SPI_slave.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SPI_slave
+
+Top level modules:
+	SPI_slave
+
+} {} {}} C:/Users/ziggy/Documents/ECE2072/SPI_communication/SPI_master.v {1 {vlog -work work -stats=none C:/Users/ziggy/Documents/ECE2072/SPI_communication/SPI_master.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SPI_master
+
+Top level modules:
+	SPI_master
+
+} {} {}} C:/Users/ziggy/Documents/ECE2072/SPI_communication/SPI_one_fpga_top_level.v {1 {vlog -work work -stats=none C:/Users/ziggy/Documents/ECE2072/SPI_communication/SPI_one_fpga_top_level.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SPI_one_fpga_top_level
+
+Top level modules:
+	SPI_one_fpga_top_level
+
+} {} {}} C:/Users/ziggy/Documents/ECE2072/SPI_communication/SPI_master_tb.v {1 {vlog -work work -stats=none C:/Users/ziggy/Documents/ECE2072/SPI_communication/SPI_master_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SPI_master_tb
+
+Top level modules:
+	SPI_master_tb
+
+} {} {}} C:/Users/ziggy/Documents/ECE2072/SPI_communication/sclk.v {1 {vlog -work work -stats=none C:/Users/ziggy/Documents/ECE2072/SPI_communication/sclk.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sclk
+
+Top level modules:
+	sclk
+
+} {} {}} C:/Users/ziggy/Documents/ECE2072/SPI_communication/SPI_tb.v {1 {vlog -work work -stats=none C:/Users/ziggy/Documents/ECE2072/SPI_communication/SPI_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SPI_tb
+
+Top level modules:
+	SPI_tb
+
+} {} {}}
